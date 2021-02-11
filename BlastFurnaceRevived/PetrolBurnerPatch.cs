@@ -23,7 +23,7 @@ namespace BurnersRevived
                 OniUtils.AddStatusItem("NeedsFuel", "NAME", (string)BUILDING.STATUSITEMS.NEEDRESOURCEMASS.NAME, "BUILDING");
                 OniUtils.AddStatusItem("NeedsFuel", "TOOLTIP", (string)BUILDING.STATUSITEMS.NEEDRESOURCEMASS.TOOLTIP, "BUILDING");
                 OniUtils.AddStatusItem("Heating", "NAME", "Internal heating rate: {HeatAmount}", "BUILDING");
-                OniUtils.AddStatusItem("Heating", "TOOLTIP", "This blast furnace is pretty hot inside.", "BUILDING");
+                OniUtils.AddStatusItem("Heating", "TOOLTIP", "This blast furnace is currently heating the targt tile.", "BUILDING");
             }
         }
 

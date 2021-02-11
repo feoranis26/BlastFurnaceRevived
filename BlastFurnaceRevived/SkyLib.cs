@@ -105,6 +105,7 @@ namespace SkyLib
             if (val.CompareTo(min) < 0) return min;
 
             return val;
-        }*/
+        }
+        */
     }
 }

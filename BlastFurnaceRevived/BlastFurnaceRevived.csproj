@@ -62,7 +62,7 @@
     <Compile Include="PetrolBurnerStatuses.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SkyLib.cs" />
-    <Compile Include="StoragePod.cs" />
+    <Compile Include="Pod.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

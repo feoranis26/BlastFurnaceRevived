@@ -19,7 +19,7 @@ namespace BurnersRevived
             {
                 PetrolBurner blastFurnace = (PetrolBurner)data;
                 if (!blastFurnace.HasEnoughFuel())
-                    return (PetrolBurnerStatuses.Format((Tag)PetrolBurnerStatuses.Petroleum.ProperName()) + "\n");
+                    return "This Petroleum Flare Stack needs petroleum to burn, who would have guessed that?";
                 return null;
             })
         };

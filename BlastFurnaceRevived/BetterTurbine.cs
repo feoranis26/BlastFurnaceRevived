@@ -29,7 +29,7 @@ namespace BurnersRevived
             public static void Postfix(ref GameObject go)
             {
                 SteamTurbine steamTurbine = go.AddOrGet<SteamTurbine>();
-                steamTurbine.pumpKGRate = 10f;
+                steamTurbine.pumpKGRate = 10.0f;
             }
         }
     }
