@@ -11,7 +11,7 @@ namespace BurnersRevived
 {
     internal class PetrolBurnerConfig : IBuildingConfig
     {
-        public static string EFFECT = "Burns Petroleum to rapidly heat the tile directly above this building, outputting superhot CO2 and waste Polluted Water in the process. Dealing with the CO2 waste is important, as it may cause the Flare Stack to overheat and the Polluted Water waste to boil instantly";
+        public static string EFFECT = "Burns Petroleum to rapidly heat the tile directly above this building, outputting superhot CO2 and waste Polluted Water in the process.";
         public const string ID = "petroleumburner";
         public const string NAME = "Petroleum Flare Stack";
         public const string DESC = "After many complaints by his friends about their equipment running out of power all the time, Otto came up with this Flare Stack to make a very large power plant instead of wasting all his time tuning the generators up.";
@@ -35,7 +35,7 @@ namespace BurnersRevived
         "Ceramic",
         "Steel"
             };
-            EffectorValues tieR5 = NOISE_POLLUTION.NOISY.TIER5;
+            EffectorValues tieR5 = NOISE_POLLUTION.NOISY.TIER6;
             BuildingDef buildingDef = BuildingTemplates.CreateBuildingDef("petroleumburner", width, height, anim, hitpoints, construction_time, new float[2]
             {
         BUILDINGS.CONSTRUCTION_MASS_KG.TIER6[0],
@@ -80,7 +80,7 @@ namespace BurnersRevived
             elementConverter.showDescriptors = false;
             elementConverter.consumedElements = new ElementConverter.ConsumedElement[1]
             {
-        new ElementConverter.ConsumedElement(SimHashes.Petroleum.CreateTag(), 1f),
+        new ElementConverter.ConsumedElement(SimHashes.Petroleum.CreateTag(), 0.75f),
             };
             elementConverter.outputElements = new ElementConverter.OutputElement[2]
             {

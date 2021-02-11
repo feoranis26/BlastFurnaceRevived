@@ -7,8 +7,8 @@
     <ProjectGuid>{4DCBA7D1-F288-4CE9-8001-8C396C773471}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PetrolBurner</RootNamespace>
-    <AssemblyName>PetrolBurner</AssemblyName>
+    <RootNamespace>BlastFurnaceRevived</RootNamespace>
+    <AssemblyName>BlastFurnaceRevived</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -62,11 +62,12 @@
     <Compile Include="PetrolBurnerStatuses.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SkyLib.cs" />
+    <Compile Include="StoragePod.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>mkdir "%25HOMEPATH%25\Documents\Klei\OxygenNotIncluded\mods\local\$(ProjectName)"
-copy "$(TargetPath)" "%25HOMEPATH%25\Documents\Klei\OxygenNotIncluded\mods\local\$(ProjectName)"
+copy "$(TargetPath)" "%25HOMEPATH%25\Documents\Klei\OxygenNotIncluded\mods\local\Petrol Burner"
 IF EXIST  "$(TargetDir)*.json" ( copy "$(TargetDir)*.json" "%25HOMEPATH%25\Documents\Klei\OxygenNotIncluded\mods\local\$(ProjectName)" )
 IF EXIST  "$(TargetDir)*.txt" ( copy "$(TargetDir)*.txt" "%25HOMEPATH%25\Documents\Klei\OxygenNotIncluded\mods\local\$(ProjectName)" )</PostBuildEvent>
   </PropertyGroup>

@@ -80,7 +80,7 @@ namespace BurnersRevived
                 this.operational.SetActive(false, false);
             if (this.operational.IsActive)
             {
-                if ((double)this.current_heat < 4800.0)
+                if ((double)this.current_heat < 3600.0)
                 {
                     this.current_heat += 80f * dt;
                     this.current_heat = Math.Min(this.current_heat, 4800f);
