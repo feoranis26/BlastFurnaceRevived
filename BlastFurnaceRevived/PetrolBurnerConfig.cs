@@ -80,7 +80,7 @@ namespace BurnersRevived
             elementConverter.showDescriptors = false;
             elementConverter.consumedElements = new ElementConverter.ConsumedElement[1]
             {
-        new ElementConverter.ConsumedElement(SimHashes.Petroleum.CreateTag(), 0.75f),
+        new ElementConverter.ConsumedElement(SimHashes.Petroleum.CreateTag(), .75f),
             };
             elementConverter.outputElements = new ElementConverter.OutputElement[2]
             {
